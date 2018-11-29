@@ -8,8 +8,10 @@ In this assignment, we were asked to create a schedule application that incorpor
 
 * HTML
 * CSS
+* Bootstrap
 * jQuery
 * Moment.js
+* RegEx
 * Firebase
 
 ### Attributions
