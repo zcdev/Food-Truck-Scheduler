@@ -41,12 +41,8 @@ var config = {
     // Push truck data to the database
     database.ref().push(newTruck);
 
-    alert("Truck successfully added");
-
     // Clear all of the text boxes
-    $(
-      "#truck-name-input, #destination-input, #first-truck-input, #frequency-input"
-    ).val("");
+    $("#truck-name-input, #destination-input, #first-truck-input, #frequency-input").val("");
   });
 
   // Create Firebase event for adding truck to the database
