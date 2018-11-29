@@ -34,20 +34,21 @@ $("#add-truck-btn").on("click", function(event) {
     );
     errors = true;
   }
-
+  var regFirstTruck = /^(0?[1-9]|1[0-2]):[0-5][0-9]$/;
   if (
     $("#first-truck-input").val() === "" ||
-    $.type($("#first-truck-input").val()) === "string"
-  ) {
+    !regFirstTruck.test($("#first-truck-input").val())) 
+    {
     $("#first-truck-input").after(
       "<span class='errors'> Please enter or verify the time for First Truck. </span>"
     );
     errors = true;
   }
-
+  var regFrequency = /\d/;
   if (
-    $("#frequency-input").val() === ""
-  ) {
+    $("#frequency-input").val() === "" ||
+    !regFrequency.test($("#frequency-input").val()))
+   {
     $("#frequency-input").after(
       "<span class='errors'> Please enter or verify the amount for Frequency. </span>"
     );
