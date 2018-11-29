@@ -66,4 +66,7 @@ span {
     .truck {
         display: inline;
     }
+    .card-body {
+        padding: 0rem;
+    }
 }
