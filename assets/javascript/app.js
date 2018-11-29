@@ -46,8 +46,7 @@ $("#add-truck-btn").on("click", function(event) {
   }
 
   if (
-    $("#frequency-input").val() === "" ||
-    $.type($("#frequency-input").val()) === "string"
+    $("#frequency-input").val() === ""
   ) {
     $("#frequency-input").after(
       "<span class='errors'> Please enter or verify the amount for Frequency. </span>"
